@@ -1,0 +1,150 @@
+.create-trip-page {
+  min-height: 100vh;
+  background: #f6f8fb;
+  padding: 50px 20px;
+}
+
+.create-trip-container {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.create-trip-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.create-trip-badge {
+  display: inline-block;
+  padding: 7px 14px;
+  border-radius: 20px;
+  background: #e8f3ff;
+  color: #1976d2;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.create-trip-header h1 {
+  margin: 15px 0 10px;
+  font-size: 38px;
+  color: #172033;
+}
+
+.create-trip-header p {
+  margin: 0;
+  color: #687386;
+  font-size: 16px;
+}
+
+.trip-form {
+  background: white;
+  border-radius: 18px;
+  padding: 35px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.form-section {
+  margin-bottom: 30px;
+}
+
+.form-section h2 {
+  margin: 0 0 18px;
+  color: #202a3c;
+  font-size: 20px;
+}
+
+.form-section label {
+  display: block;
+  margin-bottom: 8px;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-section input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 14px;
+  border: 1px solid #d9dee7;
+  border-radius: 9px;
+  outline: none;
+  font-size: 15px;
+  background: white;
+}
+
+.form-section input:focus {
+  border-color: #1976d2;
+}
+
+.date-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.style-options,
+.interest-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.style-option,
+.interest-option {
+  border: 1px solid #d7dce5;
+  background: white;
+  border-radius: 9px;
+  padding: 11px 18px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.style-option:hover,
+.interest-option:hover {
+  border-color: #1976d2;
+}
+
+.style-option.active,
+.interest-option.selected {
+  background: #1976d2;
+  border-color: #1976d2;
+  color: white;
+}
+
+.generate-trip-button {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background: #1976d2;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.generate-trip-button:hover {
+  background: #125ca8;
+}
+
+@media (max-width: 650px) {
+  .create-trip-page {
+    padding: 25px 15px;
+  }
+
+  .create-trip-header h1 {
+    font-size: 30px;
+  }
+
+  .trip-form {
+    padding: 22px;
+  }
+
+  .date-grid {
+    grid-template-columns: 1fr;
+  }
+}
